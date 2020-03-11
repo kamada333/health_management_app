@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @health.date %>
+</p>
+
+<p>
+  <strong>Body weight:</strong>
+  <%= @health.body_weight %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @health.condition %>
+</p>
+
+<%= link_to 'Edit', edit_health_path(@health) %> |
+<%= link_to 'Back', healths_path %>
