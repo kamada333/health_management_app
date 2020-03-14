@@ -70,3 +70,7 @@ gem 'devise', '~> 4.2'
 
 # manage sort order
 gem 'acts_as_list', '~> 0.9.19'
+
+# 画像実装
+gem 'carrierwave'
+gem 'mini_magick'

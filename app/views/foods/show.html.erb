@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @food.image %>
+  <%= image_tag @food.image_url if @food.image.present? %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @food.date %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @food.title %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @food.comment %>
+</p>
+
+<%= link_to 'Edit', edit_food_path(@food) %> |
+<%= link_to 'Back', foods_path %>

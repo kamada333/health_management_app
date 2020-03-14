@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_144249) do
+ActiveRecord::Schema.define(version: 2020_03_14_144953) do
+
+  create_table "foods", force: :cascade do |t|
+    t.string "image"
+    t.date "date"
+    t.string "title"
+    t.string "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "healths", force: :cascade do |t|
     t.date "date"
