@@ -1,4 +1,5 @@
 class HealthsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_health, only: [:show, :edit, :update, :destroy]
 
   # GET /healths
