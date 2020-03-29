@@ -13,21 +13,20 @@
     </tr>
   </thead>
 
-  <tbody>
-    <% @foods.each do |food| %>
+  <% @foods.each do |food| %>
+    <tbody class="box">
       <tr>
         <td><img src="<%=food.image %>" style="wight:300px; height:200px;"></td>
-        <td><%= food.date %></td>
-        <td><%= food.title %></td>
-        <td><%= food.comment %></td>
-        <td><%= link_to 'Show', food %></td>
-        <td><%= link_to 'Edit', edit_food_path(food) %></td>
-        <td><%= link_to 'Destroy', food, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="food_p14"><%= food.date %></td>
+        <td class="food_p14"><%= food.title %></td>
+        <td class="food_p14"><%= food.comment %></td>
+        <td><%= link_to '詳細', food ,class: "btn btn-success"%></td>
+        <td><%= link_to '編集', edit_food_path(food),class: "btn btn-primary" %></td>
+        <td><%= link_to '削除', food, method: :delete, data: { confirm: 'Are you sure?' } ,class: "btn btn-danger"%></td>
       </tr>
-    <% end %>
-  </tbody>
+    </tbody>
+  <% end %>
 </table>
-
 <br>
 
 <%= link_to 'New Food', new_food_path %>
