@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Date:</strong>
+  <strong>日付:</strong>
   <%= @health.date %>
 </p>
 
 <p>
-  <strong>Body weight:</strong>
+  <strong>体重:</strong>
   <%= @health.body_weight %>
 </p>
 
 <p>
-  <strong>Condition:</strong>
+  <strong>体調:</strong>
   <%= @health.condition %>
 </p>
 
-<%= link_to 'Edit', edit_health_path(@health) %> |
-<%= link_to 'Back', healths_path %>
+<%= link_to '編集', edit_health_path(@health) ,class: "btn btn-outline-success"%> |
+<%= link_to '戻る', healths_path ,class: "btn btn-outline-danger"%>
