@@ -17,16 +17,16 @@
     <tbody class="box">
       <tr>
         <td><img src="<%=food.image %>" style="wight:300px; height:200px;"></td>
-        <td class="food_p14"><%= food.date %></td>
-        <td class="food_p14"><%= food.title %></td>
-        <td class="food_p14"><%= food.comment %></td>
-        <td><%= link_to '詳細', food ,class: "btn btn-success"%></td>
-        <td><%= link_to '編集', edit_food_path(food),class: "btn btn-primary" %></td>
-        <td><%= link_to '削除', food, method: :delete, data: { confirm: 'Are you sure?' } ,class: "btn btn-danger"%></td>
+        <td class="p400"><%= food.date %></td>
+        <td class="p400"><%= food.title %></td>
+        <td class="p400"><%= food.comment %></td>
+        <td><%= link_to '詳細', food ,class: "btn btn-outline-warning btn-sm"%></td>
+        <td><%= link_to '編集', edit_food_path(food),class: "btn btn-outline-success btn-sm" %></td>
+        <td><%= link_to '削除', food, method: :delete, data: { confirm: 'Are you sure?' } ,class: "btn btn-outline-danger btn-sm"%></td>
       </tr>
     </tbody>
   <% end %>
 </table>
 <br>
 
-<%= link_to 'New Food', new_food_path %>
+<%= link_to '新規作成', new_food_path ,class: "btn btn-outline-primary"%>

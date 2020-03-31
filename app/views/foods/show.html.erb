@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Image:</strong>
+  <strong>写真:</strong>
   <%= @food.image %>
   <%= image_tag @food.image_url if @food.image.present? %>
 </p>
 
 <p>
-  <strong>Date:</strong>
+  <strong>日付:</strong>
   <%= @food.date %>
 </p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>タイトル:</strong>
   <%= @food.title %>
 </p>
 
 <p>
-  <strong>Comment:</strong>
+  <strong>コメント:</strong>
   <%= @food.comment %>
 </p>
 
-<%= link_to 'Edit', edit_food_path(@food) %> |
-<%= link_to 'Back', foods_path %>
+<%= link_to '編集', edit_food_path(@food) ,class: "btn btn-outline-success"%> |
+<%= link_to '戻る', foods_path ,class: "btn btn-outline-danger"%>
