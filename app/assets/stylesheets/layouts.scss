@@ -111,13 +111,11 @@ main {
     background-color: rgba(255, 255, 255, 0.3);
   }
   
-  /* menu-iconのCSSを貼り付けてください */
   .menu-icon {
     color: white;
     float: right;
     font-size: 25px;
     padding: 21px 0;
-    /* displayをnoneに指定してください */
     display: none;
   }
   
@@ -153,7 +151,7 @@ main {
     position: absolute;
     top: 44%;
     width: 100%;
-    color: white;
+    font-size: 40px;
   }
   
   .text-contents {
@@ -186,3 +184,54 @@ main {
     top: 7px;
     box-shadow: none;
   }
+
+  img {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .app {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .app {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  
+  .top-wrapper {
+    text-align: left;
+  }
+
+  .header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+}
