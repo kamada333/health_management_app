@@ -83,4 +83,4 @@ gem 'simple_calendar', '~> 2.0'
 
 # 日本語化
 gem 'devise-i18n'
-gem 'font-awesome-rails'
+gem 'devise-i18n-views'

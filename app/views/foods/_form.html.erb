@@ -1,7 +1,7 @@
 <%= form_with(model: food, local: true) do |form| %>
   <% if food.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(food.errors.count, "error") %> prohibited this food from being saved:</h2>
+      <h2><%= food.errors.count %> 件のエラーがあります</h2>
 
       <ul>
       <% food.errors.full_messages.each do |message| %>
@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :写真 %>
+    <%= form.label :image %>
     <%= form.file_field :image %>
   </div>
 
   <div class="field">
-    <%= form.label :日付 %>
+    <%= form.label :date %>
     <%= form.date_select :date %>
   </div>
 
   <div class="field">
-    <%= form.label :タイトル %>
+    <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :コメント %>
+    <%= form.label :comment %>
     <%= form.text_field :comment %>
   </div>
 
