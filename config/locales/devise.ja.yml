@@ -9,8 +9,6 @@ ja:
         remember_me: "ログインを記憶"
     models:
       user: "ユーザ"
-      schedule:
-        name: スケジュール
   devise:
     confirmations:
       new:
