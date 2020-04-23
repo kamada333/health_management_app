@@ -12,21 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_03_23_133704) do
 
-  create_table "calendars", force: :cascade do |t|
-    t.datetime "schedule"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "foods", force: :cascade do |t|
     t.string "image"
     t.date "date"
@@ -40,13 +25,6 @@ ActiveRecord::Schema.define(version: 2020_03_23_133704) do
     t.date "date"
     t.float "body_weight"
     t.integer "condition"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "meetings", force: :cascade do |t|
-    t.string "name"
-    t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
