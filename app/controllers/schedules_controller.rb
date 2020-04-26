@@ -25,7 +25,7 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.new(schedule_params)
 
     if @schedule.save
-      redirect_to @schedule, notice: 'Schedule was successfully created.'
+      redirect_to @schedule, notice: '正常に作成されました。'
     else
       render :new
     end
@@ -34,7 +34,7 @@ class SchedulesController < ApplicationController
   # PATCH/PUT /schedules/1
   def update
     if @schedule.update(schedule_params)
-      redirect_to @schedule, notice: 'Schedule was successfully updated.'
+      redirect_to @schedule, notice: '更新されました。'
     else
       render :edit
     end
@@ -43,7 +43,7 @@ class SchedulesController < ApplicationController
   # DELETE /schedules/1
   def destroy
     @schedule.destroy
-    redirect_to schedules_url, notice: 'Schedule was successfully destroyed.'
+    redirect_to schedules_url, notice: '削除されました。'
   end
 
   private

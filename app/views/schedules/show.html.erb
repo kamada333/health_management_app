@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>スケジュール:</strong>
-  <%= @schedule.name %>
+  <strong class = big>スケジュール:</strong>
+  <strong class = big><%= @schedule.name %></strong>
 </p>
 
 <p>
-  <strong>時間:</strong>
-  <%= @schedule.start_time %>
+  <strong class = big>時間:</strong>
+  <strong class = big><%= @schedule.start_time %></strong>
 </p>
 
 <%= link_to '編集', edit_schedule_path(@schedule) ,class: "btn btn-outline-success"%> |

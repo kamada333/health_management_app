@@ -25,7 +25,7 @@ class FoodsController < ApplicationController
     @food = Food.new(food_params)
 
     if @food.save
-      redirect_to @food, notice: 'Food was successfully created.'
+      redirect_to @food, notice: '正常に作成されました。'
     else
       render :new
     end
@@ -34,7 +34,7 @@ class FoodsController < ApplicationController
   # PATCH/PUT /foods/1
   def update
     if @food.update(food_params)
-      redirect_to @food, notice: 'Food was successfully updated.'
+      redirect_to @food, notice: '更新されました。'
     else
       render :edit
     end
@@ -43,7 +43,7 @@ class FoodsController < ApplicationController
   # DELETE /foods/1
   def destroy
     @food.destroy
-    redirect_to foods_url, notice: 'Food was successfully destroyed.'
+    redirect_to foods_url, notice: '削除しました。'
   end
 
   private

@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>日付:</strong>
-  <%= @health.date %>
+  <strong class = big>日付:</strong>
+  <strong class = big><%= @health.date %></strong>
 </p>
 
 <p>
-  <strong>体重:</strong>
-  <%= @health.body_weight %>
+  <strong class = big>体重:</strong>
+  <strong class = big><%= @health.body_weight %></strong>
 </p>
 
 <p>
-  <strong>体調:</strong>
-  <%= @health.condition %>
+  <strong class = big>体調:</strong>
+  <strong class = big><%= @health.condition %></strong>
 </p>
 
 <%= link_to '編集', edit_health_path(@health) ,class: "btn btn-outline-success"%> |

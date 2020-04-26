@@ -1,24 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>写真:</strong>
-  <%= @food.image %>
+  <strong class = big>写真:</strong>
   <%= image_tag @food.image_url if @food.image.present? %>
 </p>
 
 <p>
-  <strong>日付:</strong>
-  <%= @food.date %>
+  <strong class = big>日付:</strong>
+  <strong class = big><%= @food.date %></strong>
 </p>
 
 <p>
-  <strong>タイトル:</strong>
-  <%= @food.title %>
+  <strong class = big>タイトル:</strong>
+  <strong class = big><%= @food.title %></strong>
 </p>
 
 <p>
-  <strong>コメント:</strong>
-  <%= @food.comment %>
+  <strong class = big>コメント:</strong>
+  <strong class = big><%= @food.comment %></strong>
 </p>
 
 <%= link_to '編集', edit_food_path(@food) ,class: "btn btn-outline-success"%> |

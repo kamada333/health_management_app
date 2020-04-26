@@ -25,7 +25,7 @@ class HealthsController < ApplicationController
     @health = Health.new(health_params)
 
     if @health.save
-      redirect_to @health, notice: 'Health was successfully created.'
+      redirect_to @health, notice: '正常に作成されました。'
     else
       render :new
     end
@@ -34,7 +34,7 @@ class HealthsController < ApplicationController
   # PATCH/PUT /healths/1
   def update
     if @health.update(health_params)
-      redirect_to @health, notice: 'Health was successfully updated.'
+      redirect_to @health, notice: '更新されました。'
     else
       render :edit
     end
@@ -43,7 +43,7 @@ class HealthsController < ApplicationController
   # DELETE /healths/1
   def destroy
     @health.destroy
-    redirect_to healths_url, notice: 'Health was successfully destroyed.'
+    redirect_to healths_url, notice: '削除されました。'
   end
 
   private
