@@ -26,3 +26,5 @@ Things you may want to cover:
 * こんにちは
 
 * カスタム
+
+* パーフェクト
